@@ -10,10 +10,9 @@ interface Props {
 const InputField = ({todo, setTodo, handleAdd}:Props) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
-
   return (
     <form 
-				className='input' 
+				className='text' 
 				onSubmit= {(event) => {
 					handleAdd(event)
 					inputRef.current?.blur();
